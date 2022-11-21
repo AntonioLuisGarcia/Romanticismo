@@ -1,0 +1,131 @@
+@font-face {
+    font-family:descarga;
+    src: url(../fonts/Anemone_F3_Demo.ttf);
+    
+}
+
+@font-face {
+  font-family:wrapper;
+  src: url(../fonts/HindSiliguri-SemiBold.ttf);
+}
+
+body{
+  color:black;
+    background-color: aquamarine;
+
+} 
+
+#wrapper{
+    background-color: rgba(240, 248, 255, 0.66);
+    width: 80%;
+    margin: auto;
+    font-family: wrapper;
+}
+/**********************HERO SECTION VERSION 1**************************/
+
+#hero{
+    background-image: url(../images/hero.jpg);
+    height: 90vh;                   /*para que se agrande */
+    background-repeat: no-repeat;
+    background-size: cover;         /*ocupa todo el contenido*/
+    background-position: center;    /*para cuando se achique se quede el punto de interes en medio*/
+    text-align: center;
+    padding-top: 20px;
+    font-family: descarga;
+    font-size: 3rem;
+  
+  
+  }
+
+#titulo{
+    width: 50%;
+    background-color: rgba(240, 255, 255, 0.494);
+    margin: auto;
+    padding: 20px;
+    margin-top: 20%;
+    border-radius: 50%;
+    backdrop-filter: blur(3.5px);/*al fondo le aplica un filtro blur*/
+  }
+
+/**********************HERO SECTION VERSION 2**************************/
+
+#myVideo {
+  /*position: fixed;*/
+  position: relative;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+#titulo2 {
+  /*position: fixed;*/
+  position:relative;
+  top: -24vh;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  height: 20vh;
+
+}
+
+/**********************HERO SECTION VERSION 3**************************/
+
+#hero3{
+  background-color:rgb(0, 203, 169) ;
+  height: 40vh;
+  position: relative;
+}
+
+#titulo3{
+  position: absolute;
+  top:50%;
+  left:50%;
+  /*truco del almendruco*/
+  transform: translate(-50%,-50%);
+  font-family: descarga;
+  font-family: 3rem;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+
+/**********************HERO SECTION VERSION 4**************************/
+
+#hero4{
+  background-image: url(../images/low-poly-grid-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+#titulo4{
+  font-size: 4rem;
+  width: 50%;
+  background-color: rgba(240, 248, 255, 0.373);
+  backdrop-filter: blur(3.5px);
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+
+/********************MEDIA QUERIES********************/
+
+@media only screen and (width<=900px){
+
+        #wrapper { width: 100%;
+                   font-size:2.5rem ; }
+
+        #titulo4{
+          font-size: 5vh;
+        }
+}
+
+@media only screen and (width<=600px){
+
+  #titulo{ 
+         width: 80%; /*esto para moviles para que se haga mas grande el recuadro y no se salga la letra*/
+        }
+}
